@@ -19,6 +19,12 @@
 (add-to-list 'package-pinned-packages '(magit . "melpa-stable") t)
 
 
+;; use neotree
+(add-to-list 'load-path "/Users/vjhingran/emacs_deps/neotree")
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
+
+
 ;; Load and activate emacs packages. Do this first so that the
 ;; packages are loaded before you start trying to modify them.
 ;; This also sets the load path.
@@ -149,7 +155,7 @@
  '(coffee-tab-width 2)
  '(package-selected-packages
    (quote
-    (magit tagedit rainbow-delimiters projectile smex ido-completing-read+ cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell))))
+    (neotree magit tagedit rainbow-delimiters projectile smex ido-completing-read+ cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
